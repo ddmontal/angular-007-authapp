@@ -1,0 +1,14 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AppConfigService {
+  AUTH0: { CLIENT_ID: string; DOMAIN: string; SECRET: string } = {
+    CLIENT_ID: '',
+    DOMAIN: '',
+    SECRET: ''
+  };
+
+  constructor() {}
+}

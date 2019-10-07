@@ -13,6 +13,8 @@
             <li class="nav-item">
               <a class="nav-link" [routerLink]="[ '/private' ]" routerLinkActive="active">Private</a>
             </li>
-        </ul>
+          </ul>
+          <a class="nav-link btn btn-outline-primary" href="javascript:;" (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</a>
+          <a class="nav-link btn btn-outline-danger" href="javascript:;" (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</a>
     </div>
 </nav>
